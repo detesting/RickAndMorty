@@ -11,11 +11,12 @@
 }
 
 .img {
-  max-width: 30%;
+  width: 30%;
 }
 
 .image {
   border-radius: 8px;
+  width: 100%;
 }
 
 .info {
@@ -27,6 +28,8 @@
   margin: 0 10px 10px 10px;
 
   color: rgb(255, 255, 255);
+
+  width: 70%;
 }
 
 .name {
