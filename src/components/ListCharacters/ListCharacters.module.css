@@ -1,0 +1,56 @@
+.ListCharacters {
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(32, 35, 41);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 0 18px 0;
+  color: white;
+}
+
+.characters_list {
+  align-self: center;
+  margin: 26px;
+}
+
+.item {
+  padding: 0;
+
+  background: rgb(60, 62, 68);
+  border: 1px solid gray;
+
+  overflow: hidden;
+}
+
+.item:hover {
+  cursor: pointer;
+
+  animation: shadow-drop-center 1s ease 0s 1 normal forwards;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+  margin: 30px;
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+    transform: scale(0.99);
+  }
+  100% {
+    box-shadow: 3px 5px 22px 5px rgba(34, 60, 80, 0.4);
+    transform: scale(1.01);
+  }
+}

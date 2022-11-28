@@ -1,0 +1,70 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(32, 35, 41);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+  padding: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  color: white;
+}
+
+.item {
+  font-size: 16px;
+  color: white;
+
+  margin: 10px;
+}
+
+.input,
+.select {
+  color: black;
+}
+
+.select:focus,
+.input:focus,
+.input:hover {
+  box-shadow: none;
+  border: 1px solid gray !important;
+}
+
+.button {
+  color: black;
+  background: white;
+}
+
+.button:hover {
+  opacity: 70%;
+  color: black !important;
+  background: white !important;
+  border: 1px solid black !important;
+}
+
+.button:active {
+  background-color: #808080;
+}
+
+.label {
+  color: white;
+
+  margin-right: 10px;
+}

@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Railway', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+
+  background: white;
+  color: black;
+
+  height: 100px;
+}

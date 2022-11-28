@@ -1,0 +1,75 @@
+.character {
+  display: flex;
+  justify-content: flex-start;
+
+  font-family: 'Raleway', sans-serif;
+
+  background: rgb(60, 62, 68);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  max-width: 30%;
+}
+
+.image {
+  border-radius: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin: 0 10px 10px 10px;
+
+  color: rgb(255, 255, 255);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.green {
+  color: lawngreen;
+}
+
+.yellow {
+  color: orange;
+}
+
+.red {
+  color: red;
+}
+
+.last,
+.seen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-top: 5px;
+}
+
+.head {
+  font-size: 14px;
+  opacity: 70%;
+}
+
+.text {
+  font-size: 16px;
+}

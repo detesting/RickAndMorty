@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.ant-card .ant-card-body {
+  padding: 13px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-col {
+  padding: 0 !important;
+}
+.ant-list .ant-list-item {
+  padding: 12px 12px;
+}
+.ant-pagination .ant-pagination-prev {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  color: white;
+  background-color: rgb(60, 62, 68);
+  border-color: white;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-item a {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-prev button {
+  color: white;
+}
+
+.ant-pagination .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  color: white;
+}
+.ant-form-item .ant-form-item-label > label {
+  color: white;
+}
+
+.ant-empty-normal {
+  color: white;
+}
+
+.ant-modal-root .ant-modal-mask {
+  opacity: 100%;
+  background-color: transparent;
+}
+
+.ant-modal-root .ant-modal-wrap {
+  opacity: 100%;
+}
+
+body {
+  margin: 0;
+  background: rgb(32, 35, 41);
+}
+
+.ant-modal .ant-modal-content {
+  box-shadow: none;
+  border: 2px solid gray;
+  opacity: 100%;
+}
+
+.ant-modal .ant-modal-content {
+  background: rgb(60, 62, 68);
+  border: 1px solid gray;
+}
+
+.ant-modal .ant-modal-close {
+  color: white;
+}
+
+.ant-btn-primary {
+  background: white;
+  color: black;
+}
+
+.ant-modal {
+  width: 50% !important;
 }
