@@ -42,74 +42,89 @@ function Filters() {
         className={styles.form}
         initialValues={filter}
       >
-        <Form.Item label="Name" name="name" className={styles.item}>
-          <Input className={styles.input} placeholder="Name" value={filter.name} />
-        </Form.Item>
-        <Form.Item label="Status" name="status" className={styles.item}>
-          <Select
-            value={filter.status}
-            style={{ width: 120 }}
-            className={styles.select}
-            options={[
-              {
-                value: 'none',
-                label: 'None',
-              },
-              {
-                value: 'alive',
-                label: 'Alive',
-              },
-              {
-                value: 'dead',
-                label: 'Dead',
-              },
-              {
-                value: 'unknown',
-                label: 'Unknown',
-              },
-            ]}
-          />
-        </Form.Item>
-        <Form.Item label="Species" name="species" className={styles.item}>
-          <Input className={styles.input} placeholder="Species" value={filter.species} />
-        </Form.Item>
-        <Form.Item label="Type" name="type" className={styles.item}>
-          <Input className={styles.input} placeholder="Type" value={filter.type} />
-        </Form.Item>
-        <Form.Item label="Gender" name="gender" className={styles.item}>
-          <Select
-            value={filter.gender}
-            style={{ width: 120 }}
-            className={styles.select}
-            options={[
-              {
-                value: 'none',
-                label: 'None',
-              },
-              {
-                value: 'female',
-                label: 'Female',
-              },
-              {
-                value: 'male',
-                label: 'Male',
-              },
-              {
-                value: 'genderless',
-                label: 'Genderless',
-              },
-              {
-                value: 'unknown',
-                label: 'Unknown',
-              },
-            ]}
-          />
-        </Form.Item>
-        <Form.Item className={styles.item} name="submit">
-          <Button htmlType="submit" className={styles.button}>
-            Filter
-          </Button>
-        </Form.Item>
+        <div className={styles.div}>
+          <span className={styles.span}>Name</span>
+          <Form.Item name="name" className={styles.item}>
+            <Input className={styles.input} placeholder="Name" value={filter.name} />
+          </Form.Item>
+        </div>
+        <div className={styles.div}>
+          <span className={styles.span}>Status</span>
+          <Form.Item name="status" className={styles.item}>
+            <Select
+              value={filter.status}
+              className={styles.select}
+              options={[
+                {
+                  value: 'none',
+                  label: 'None',
+                },
+                {
+                  value: 'alive',
+                  label: 'Alive',
+                },
+                {
+                  value: 'dead',
+                  label: 'Dead',
+                },
+                {
+                  value: 'unknown',
+                  label: 'Unknown',
+                },
+              ]}
+            />
+          </Form.Item>
+        </div>
+        <div className={styles.div}>
+          <span className={styles.span}>Species</span>
+          <Form.Item name="species" className={styles.item}>
+            <Input className={styles.input} placeholder="Species" value={filter.species} />
+          </Form.Item>
+        </div>
+        <div className={styles.div}>
+          <span className={styles.span}>Type</span>
+          <Form.Item name="type" className={styles.item}>
+            <Input className={styles.input} placeholder="Type" value={filter.type} />
+          </Form.Item>
+        </div>
+        <div className={styles.div}>
+          <span className={styles.span}>Gender</span>
+          <Form.Item name="gender" className={styles.item}>
+            <Select
+              value={filter.gender}
+              className={styles.select}
+              options={[
+                {
+                  value: 'none',
+                  label: 'None',
+                },
+                {
+                  value: 'female',
+                  label: 'Female',
+                },
+                {
+                  value: 'male',
+                  label: 'Male',
+                },
+                {
+                  value: 'genderless',
+                  label: 'Genderless',
+                },
+                {
+                  value: 'unknown',
+                  label: 'Unknown',
+                },
+              ]}
+            />
+          </Form.Item>
+        </div>
+        <div className={styles.div}>
+          <Form.Item className={styles.item} name="submit">
+            <Button htmlType="submit" className={styles.button}>
+              Filter
+            </Button>
+          </Form.Item>
+        </div>
       </Form>
     </div>
   );
